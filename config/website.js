@@ -15,9 +15,9 @@ module.exports = {
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@allgoodserra', // Twitter Username
-  ogSiteName: 'serra', // Facebook Site Name
+  ogSiteName: '', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
-  googleAnalyticsID: 'UA-47519312-5',
+  googleAnalyticsID: 'UA-136587104-1',
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
