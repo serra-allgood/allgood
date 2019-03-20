@@ -10780,14 +10780,20 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-cantata-one@^0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-cantata-one/-/typeface-cantata-one-0.0.72.tgz#ca66b8269031067b67303716324e6bda2d71c058"
-  integrity sha512-FPMqyQvGwA1anWtX1SnLpGLo5pZGRWToNdHIBxPQhb2X8l5x9JiGeFJyq+hjwFx8QJy+V/ma5XFx0dpghGZCzQ==
+typeface-cormorant-infant@^0.0.71:
+  version "0.0.71"
+  resolved "https://registry.yarnpkg.com/typeface-cormorant-infant/-/typeface-cormorant-infant-0.0.71.tgz#1d680f73d4b2edac9a6958987fff2adc57c4931b"
+  integrity sha512-1cjOuNr31Bv73ZJEoXdMqJrHiBq46LTTvVbCcniTR8O5crvrqC6W5Aq0Q72mtTbEeQIaTlVX/dmwLhxjHUL1Dw==
 
-typeface-open-sans@^0.0.54:
+typeface-fira-mono@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-fira-mono/-/typeface-fira-mono-0.0.72.tgz#b396d2a08814bb3a32d94ef71c74d37883c3475b"
+  integrity sha512-bouzjtniGMrakhazipUl6mskswe7UvH3qynU5Wsl0O7NMuL178VtZ0pOqUGsjBJ42l64GZo9nUMI1eSK4kvJbQ==
+
+typeface-fira-sans@^0.0.54:
   version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
+  resolved "https://registry.yarnpkg.com/typeface-fira-sans/-/typeface-fira-sans-0.0.54.tgz#1a5fbd8fdc6195ee580e765dbcc4113df18f0f6f"
+  integrity sha512-WPbYqk8w4YRWWCGOrBDXo0iPUmNdTR3frTq2I16+RSLJMNbIDjRMpbMjmyMipBmXN8bwuvyumCgJ5oGpuzpY3g==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
