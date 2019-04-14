@@ -7,15 +7,15 @@ import { UpDown, UpDownWide } from '../styles/animations';
 import { colors } from '../../tailwind';
 import SVG from '../components/SVG';
 
-const Projects = ({ children, offset }) => (
-  <>
+const Perspectives = ({ children, offset }) => (
+  <React.Fragment>
     <DividerMiddle
       bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
       speed={-0.2}
       offset={`${offset}.1`}
-      factor={2}
+      factor={1.5}
     />
-    <Content speed={0.4} offset={`${offset}.2`} factor={2}>
+    <Content speed={0.4} offset={`${offset}.2`}>
       <Inner>{children}</Inner>
     </Content>
     <Divider speed={0.1} offset={offset} factor={2}>
@@ -40,12 +40,12 @@ const Projects = ({ children, offset }) => (
       <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
       <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
     </Divider>
-  </>
+  </React.Fragment>
 );
 
-export default Projects;
+export default Perspectives;
 
-Projects.propTypes = {
+Perspectives.propTypes = {
   children: PropTypes.node.isRequired,
   offset: PropTypes.number.isRequired
 };

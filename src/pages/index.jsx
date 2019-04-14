@@ -5,7 +5,8 @@ import { Parallax } from 'react-spring/renderprops-addons.cjs';
 
 // Components
 import Layout from '../components/Layout';
-import ProjectCard from '../components/ProjectCard';
+import AccentCard from '../components/AccentCard';
+import ContraCard from '../components/ContraCard';
 
 // Elements
 import Inner from '../elements/Inner';
@@ -13,13 +14,14 @@ import { Title, BigTitle, Subtitle } from '../elements/Titles';
 
 // Views
 import Hero from '../views/Hero';
-import Projects from '../views/Projects';
+import Perspectives from '../views/Perspectives';
+import Contraindications from '../views/Contraindications';
 import About from '../views/About';
 import Contact from '../views/Contact';
 
 import avatar from '../images/avatar.jpg';
 
-const ProjectsWrapper = styled.div`
+const ContentWrapper = styled.section`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
   grid-gap: 4rem;
@@ -33,7 +35,7 @@ const ProjectsWrapper = styled.div`
   }
 `;
 
-const AboutHero = styled.div`
+const AboutHero = styled.section`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
 `;
 
@@ -57,53 +59,102 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `;
 
+const TextEmphasis = styled.p`
+  ${tw`font-bold text-2xl text-grey-light tracking-wide`};
+`;
+
 const Index = () => (
-  <>
+  <React.Fragment>
     <Layout />
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
-          Hello, <br /> I'm John Doe.
+          Serra Allgood, <br />
+          self-taught engineer with a focus on ethical software
         </BigTitle>
-        <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+        <Subtitle>Trans woman, aspiring psychological researcher, spider enthusiast</Subtitle>
       </Hero>
-      <Projects offset={1}>
-        <Title>Projects</Title>
-        <ProjectsWrapper>
-          <ProjectCard
-            title="Freiheit"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+      <Perspectives offset={1}>
+        <Title>Perspectives that separate Serra from others</Title>
+        <ContentWrapper>
+          <AccentCard bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
+            <TextEmphasis>
+              If you want to be right, you have to be willing to change your mind and do so frequently.
+            </TextEmphasis>
+            Software development does not exist in a vacuum, and what you might cherish as a thoughtful and well
+            designed approach can always be made better by asking others what their opinions are.
+          </AccentCard>
+          <AccentCard bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
+            <TextEmphasis>You're both the imposter and the hero.</TextEmphasis>
+            The two most common fallacies that strike software engineers are two sides of the same coin. Instead of
+            despairing that you don't deserve to be where you are, hold the acknowledgment that you don't know
+            everything, so at every resting point, you can ask yourself honestly, how can I do this better? What
+            assumptions am I making? Instead of taking on more than you can handle and refuse to ask for help in an
+            attempt to be the hero, be the hero in the sense that you're always willing to take something on that you
+            know will challenge you.
+          </AccentCard>
+          <AccentCard bg="linear-gradient(to right, rgba(9,117,0,1) 0%, rgba(255,194,0,1) 100%)">
+            <TextEmphasis>TDD is not as important as test early, test often.</TextEmphasis>
+            There's no shame at throwing code at a problem to get an idea of how you want to approach it, then deleting
+            it all and restarting with best practices in mind.
+          </AccentCard>
+          <AccentCard bg="linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%)">
+            <TextEmphasis>The only people who decide what brings value to software are the users.</TextEmphasis>
+            Every part of the process must have them in mind, and asking how the user benefits is always a valid
+            question.
+          </AccentCard>
+        </ContentWrapper>
+      </Perspectives>
+      <Contraindications offset={2}>
+        <Title>Contraindications for adding Serra to your working group</Title>
+        <ContentWrapper>
+          <ContraCard
+            icon="sad"
+            fill="#2feef1"
+            stroke="#2f4bf1"
+            bg="linear-gradient(to right, rgba(25,25,25,1) 0%, rgba(200,200,200,1) 100%)"
           >
-            This project is my entry to Adobe's #ChallengeYourPerspective contest.
-          </ProjectCard>
-          <ProjectCard
-            title="Harry Potter"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+            <TextEmphasis>Major Depression Disorder</TextEmphasis>
+            Although I keep getting better at minimizing the impact, there are days when I can't do much of anything. I
+            can't guarantee 100% reliability because of this.
+          </ContraCard>
+          <ContraCard
+            icon="bug"
+            fill="#f71431"
+            stroke="#000"
+            bg="radial-gradient(circle, rgba(25,25,25,1) 0%, rgba(200,200,200,1) 100%)"
           >
-            I entered the DOCMA 2017 award with this Harry Potter inspired image.
-          </ProjectCard>
-          <ProjectCard
-            title="Tomb Raider"
-            link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+            <TextEmphasis>Paranoid Delusions</TextEmphasis>
+            Thankfully very manageable, these tend to only crop up when I feel like I'm doing something I'm not supposed
+            to or in new chaotic social situation. When I have moments that I can't control it, I may need to abruptyly
+            and without explanation remove myself from the social situation to calm down.
+          </ContraCard>
+          <ContraCard
+            icon="hourGlass"
+            fill="#fff"
+            stoke="#000"
+            bg="linear-gradient(0deg, rgba(25,25,25,1) 0%, rgba(200,200,200,1) 100%)"
           >
-            Recreation of a Tomb Raider Wallpaper (Fan Art)
-          </ProjectCard>
-          <ProjectCard
-            title="Eagle"
-            link="https://www.behance.net/gallery/38068151/Eagle"
-            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+            <TextEmphasis>Aspirations Outside of Tech</TextEmphasis>
+            My eventual career path is to pursue graduate education and become a researcher, so any current position in
+            tech will always have an eventual deadline. As to when that is, it's currently undecided.
+          </ContraCard>
+          <ContraCard
+            icon="home"
+            fill="#f7eb14"
+            stroke="#000"
+            bg="radial-gradient(circle, rgba(200,200,200,1) 0%, rgba(25,25,25,1) 100%)"
           >
-            A fantasy image manipulation relocating the habitat of wild animals.
-          </ProjectCard>
-        </ProjectsWrapper>
-      </Projects>
+            <TextEmphasis>Works Best from Home</TextEmphasis>
+            Due to my particular neurodivergence, I absolute need at least some time working remote. I absolutely see
+            the value in working in proximity, however, so it does not need to be 100%.
+          </ContraCard>
+        </ContentWrapper>
+      </Contraindications>
       <About offset={3}>
         <Title>About</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
+          <Avatar src={avatar} alt="Serra Allgood" />
           <AboutSub>
             The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
             Emoji into my speech to better express myself. Winky face.
@@ -133,7 +184,7 @@ const Index = () => (
         </Footer>
       </Contact>
     </Parallax>
-  </>
+  </React.Fragment>
 );
 
 export default Index;

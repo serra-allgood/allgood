@@ -6,7 +6,7 @@ import { width as twWidth } from '../../tailwind';
 import { hidden } from '../styles/utils';
 
 const Wrapper = styled.svg`
-  ${tw`absolute`};
+  ${props => props.absolute && tw`absolute`};
   stroke: currentColor;
   ${props => props.hiddenMobile && hidden};
   color: ${props => props.stroke};
@@ -17,6 +17,28 @@ const Wrapper = styled.svg`
 `;
 
 const icons = {
+  home: {
+    shape: (
+      <path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/>
+    ),
+    viewBox: '0 0 20 20'
+  },
+  hourGlass: {
+    shape: (
+      <path
+        d="M3 18a7 7 0 0 1 4-6.33V8.33A7 7 0 0 1 3 2H1V0h18v2h-2a7 7 0 0 1-4 6.33v3.34A7 7 0 0 1 17 18h2v2H1v-2h2zM5 2a5 5 0 0 0 4 4.9V10h2V6.9A5 5 0 0 0 15 2H5z"
+      />
+    ),
+    viewBox: '0 0 20 20'
+  },
+  sad: {
+    shape: (
+      <path
+        d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM6.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm2.16 6a6 6 0 0 0-11.32 0h11.32z"
+      />
+    ),
+    viewBox: '0 0 20 20'
+  },
   triangle: {
     shape: (
       <polygon
@@ -76,10 +98,16 @@ const icons = {
       />
     ),
     viewBox: '0 0 100 100'
+  },
+  bug: {
+    shape: (
+      <path d="M15.3 14.89l2.77 2.77a1 1 0 0 1 0 1.41 1 1 0 0 1-1.41 0l-2.59-2.58A5.99 5.99 0 0 1 11 18V9.04a1 1 0 0 0-2 0V18a5.98 5.98 0 0 1-3.07-1.51l-2.59 2.58a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41l2.77-2.77A5.95 5.95 0 0 1 4.07 13H1a1 1 0 1 1 0-2h3V8.41L.93 5.34a1 1 0 0 1 0-1.41 1 1 0 0 1 1.41 0l2.1 2.1h11.12l2.1-2.1a1 1 0 0 1 1.41 0 1 1 0 0 1 0 1.41L16 8.41V11h3a1 1 0 1 1 0 2h-3.07c-.1.67-.32 1.31-.63 1.89zM15 5H5a5 5 0 1 1 10 0z" />
+    ),
+    viewBox: '0 0 20 20'
   }
 };
 
-const SVG = ({ stroke, fill, width, icon, left, top, hiddenMobile }) => (
+const SVG = ({ stroke, fill, width, icon, left, top, hiddenMobile, absolute }) => (
   <Wrapper
     viewBox={icons[icon].viewBox}
     stroke={stroke}
@@ -88,6 +116,7 @@ const SVG = ({ stroke, fill, width, icon, left, top, hiddenMobile }) => (
     left={left}
     top={top}
     hiddenMobile={hiddenMobile}
+    absolute={absolute}
   >
     {icons[icon].shape}
   </Wrapper>
@@ -102,7 +131,8 @@ SVG.propTypes = {
   icon: PropTypes.oneOf(Object.keys(icons)).isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
-  hiddenMobile: PropTypes.bool
+  hiddenMobile: PropTypes.bool,
+  absolute: PropTypes.bool
 };
 
 SVG.defaultProps = {
@@ -111,5 +141,6 @@ SVG.defaultProps = {
   fill: 'none',
   left: '0%',
   top: '0%',
-  hiddenMobile: false
+  hiddenMobile: false,
+  absolute: true
 };

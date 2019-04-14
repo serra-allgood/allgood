@@ -6,10 +6,10 @@ import 'typeface-fira-sans';
 import 'typeface-fira-mono';
 
 const Layout = () => (
-  <>
+  <React.Fragment>
     <SEO />
     <GlobalStyle />
-  </>
+  </React.Fragment>
 );
 
 export default Layout;

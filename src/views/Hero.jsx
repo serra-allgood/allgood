@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const Hero = ({ children, offset }) => (
-  <>
+  <React.Fragment>
     <Divider speed={0.2} offset={offset}>
       <UpDown>
         <SVG icon="triangle" hiddenMobile width={48} stroke={colors.orange} left="10%" top="20%" />
@@ -45,7 +45,7 @@ const Hero = ({ children, offset }) => (
     <Content speed={0.4} offset={offset}>
       <Wrapper>{children}</Wrapper>
     </Content>
-  </>
+  </React.Fragment>
 );
 
 export default Hero;

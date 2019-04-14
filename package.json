@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "name": "serra.allgood.dev",
+  "description": "Personal landing page for Serra Allgood",
+  "version": "1.0.0",
+  "author": "Serra Allgood <serra@allgood.dev> (https://serra.allgood.dev)",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -29,11 +29,7 @@
     "typeface-fira-mono": "^0.0.72",
     "typeface-fira-sans": "^0.0.54"
   },
-  "keywords": [
-    "gatsby",
-    "starter",
-    "portfolio"
-  ],
+  "keywords": [],
   "scripts": {
     "dev": "gatsby develop -o",
     "develop": "gatsby develop",
@@ -54,11 +50,8 @@
     "prettier": "^1.16.4"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "url": "https://github.com/allgoodserra/allgood.git",
     "type": "git"
   },
-  "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
-  },
-  "homepage": "https://cara.lekoarts.de"
+  "homepage": "https://serra.allgood.dev"
 }
