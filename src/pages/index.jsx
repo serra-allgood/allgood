@@ -16,6 +16,7 @@ import { Title, BigTitle, Subtitle } from '../elements/Titles';
 import Hero from '../views/Hero';
 import Perspectives from '../views/Perspectives';
 import Contraindications from '../views/Contraindications';
+import Experience from '../views/Experience';
 import About from '../views/About';
 import Contact from '../views/Contact';
 
@@ -66,7 +67,7 @@ const TextEmphasis = styled.p`
 const Index = () => (
   <React.Fragment>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0}>
         <BigTitle>
           Serra Allgood, <br />
@@ -151,37 +152,75 @@ const Index = () => (
           </ContraCard>
         </ContentWrapper>
       </Contraindications>
-      <About offset={3}>
+      <Experience offset={3}>
+        <Title>Just the Experience Stats</Title>
+        <ContentWrapper>
+          <AccentCard bg="#8c8e8c">
+            <Subtitle>Ruby</Subtitle>
+            <p>8 years professional, most recently used 2019</p>
+            <p>Frameworks:</p>
+            <ul>
+              <li>Ruby on Rails, 2019</li>
+            </ul>
+          </AccentCard>
+          <AccentCard bg="#8c8e8c">
+            <Subtitle>JavaScript</Subtitle>
+            <p>8 years professional, most recently used 2019</p>
+            <p>Frameworks:</p>
+            <ul>
+              <li>React, 2019</li>
+              <li>Angular, 2017</li>
+              <li>AngularJS, 2017</li>
+            </ul>
+          </AccentCard>
+          <AccentCard bg="#8c8e8c">
+            <Subtitle>SQL</Subtitle>
+            <p>8 years professional, most recently used 2019</p>
+            <p>Versions:</p>
+            <ul>
+              <li>Postgresql</li>
+            </ul>
+          </AccentCard>
+          <AccentCard bg="#8c8e8c">
+            <Subtitle>Go</Subtitle>
+            <p>1 year hobby, most recently used 2019</p>
+          </AccentCard>
+          <AccentCard bg="#8c8e8c">
+            <Subtitle>Rust</Subtitle>
+            <p>&lt; 1 year hobby, most recently used 2019</p>
+          </AccentCard>
+        </ContentWrapper>
+      </Experience>
+      <About offset={4.5}>
         <Title>About</Title>
         <AboutHero>
           <Avatar src={avatar} alt="Serra Allgood" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-            Emoji into my speech to better express myself. Winky face.
+            Very happily employed at Procore Technologies, I bring a perspective informed by cognitive psychology,
+            leftist politics, and an intellectual curiosity so driving that I have to consciously keep myself focused on
+            what I'm currently learning.
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
-          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
-          right?
+          Always praised as a smart child, I'm not afraid to ask ignorant questions and will do so frequently. I deal
+          with my mental issues by being transparent, straightforward, and eager, and those attitudes stay with me in
+          almost all contexts. My primary motivation is company culture followed closely by the opportunity to try new
+          technologies. Interested in hearing what it's like as a software engineer at Procore? I'll be happy to tell
+          you great it is here.
         </AboutDesc>
       </About>
-      <Contact offset={4}>
+      <Contact offset={5}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:serra@allgood.dev">Hi</a> or find me on
+            <br />
+            Matrix as @jump_spider:matrix.spider.ink
+            <br />
+            GitHub as @allgoodserra
           </ContactText>
         </Inner>
-        <Footer>
-          &copy; 2019 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by{' '}
-          <a href="https://www.lekoarts.de">LekoArts</a>.
-        </Footer>
+        <Footer>&copy; 2019 by Serra Allgood</Footer>
       </Contact>
     </Parallax>
   </React.Fragment>
