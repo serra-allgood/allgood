@@ -1,5 +1,5 @@
 [[redirects]]
   from = "https://allgood.netlify.com"
   to = "https://serra.allgood.dev"
-  status = 200
+  status = 301
   force = true
