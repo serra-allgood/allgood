@@ -10,7 +10,7 @@ import SVG from '../components/SVG';
 const Experiencce = ({ children, offset }) => (
   <React.Fragment>
     <Divider bg="#097500" speed={0.5} offset={offset} />
-    <Content speed={0.4} offset={`${offset}.5`}>
+    <Content offset={offset} speed={2}>
       <Inner>{children}</Inner>
     </Content>
     <Divider speed={0.1} offset={offset}>

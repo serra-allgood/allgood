@@ -42,7 +42,7 @@ const Contact = ({ children, offset }) => (
         </InnerWave>
       </WaveWrapper>
     </Divider>
-    <Content speed={0.4} offset={offset}>
+    <Content offset={offset} speed={-0}>
       {children}
     </Content>
     <Divider speed={0.1} offset={offset}>

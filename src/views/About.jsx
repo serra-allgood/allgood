@@ -29,7 +29,7 @@ const About = ({ children, offset }) => (
       <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
       <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
     </Divider>
-    <Content speed={0.4} offset={offset}>
+    <Content offset={offset} speed={2}>
       <Inner>{children}</Inner>
     </Content>
   </React.Fragment>

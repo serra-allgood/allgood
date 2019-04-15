@@ -9,13 +9,8 @@ import SVG from '../components/SVG';
 
 const Perspectives = ({ children, offset }) => (
   <React.Fragment>
-    <DividerMiddle
-      bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-      speed={-0.2}
-      offset={`${offset}.1`}
-      factor={1.5}
-    />
-    <Content speed={0.4} offset={`${offset}.2`}>
+    <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={offset} />
+    <Content offset={offset} speed={2}>
       <Inner>{children}</Inner>
     </Content>
     <Divider speed={0.1} offset={offset} factor={2}>

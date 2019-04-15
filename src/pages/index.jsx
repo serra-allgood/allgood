@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
-import { Parallax } from 'react-spring/renderprops-addons.cjs';
+import { Parallax } from 'react-spring/renderprops-addons';
 
 // Components
 import Layout from '../components/Layout';
@@ -127,7 +127,7 @@ const Index = () => (
           >
             <TextEmphasis>Paranoid Delusions</TextEmphasis>
             Thankfully very manageable, these tend to only crop up when I feel like I'm doing something I'm not supposed
-            to or in new chaotic social situation. When I have moments that I can't control it, I may need to abruptyly
+            to or in new chaotic social situation. When I have moments that I can't control it, I may need to abruptly
             and without explanation remove myself from the social situation to calm down.
           </ContraCard>
           <ContraCard
@@ -191,7 +191,7 @@ const Index = () => (
           </AccentCard>
         </ContentWrapper>
       </Experience>
-      <About offset={4.5}>
+      <About offset={4}>
         <Title>About</Title>
         <AboutHero>
           <Avatar src={avatar} alt="Serra Allgood" />

@@ -10,7 +10,7 @@ import SVG from '../components/SVG';
 const Contraindications = ({ children, offset }) => (
   <React.Fragment>
     <Divider bg="#fa5c83" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={-2} offset={offset} />
-    <Content speed={0.4} offset={offset} factor={1.5}>
+    <Content offset={offset} speed={2.5}>
       <Inner>{children}</Inner>
     </Content>
     <Divider speed={0.1} offset={offset}>
