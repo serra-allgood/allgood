@@ -14,7 +14,7 @@ module.exports = {
   author: 'Serra Allgood', // Author for schema.org JSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@allgoodserra', // Twitter Username
+  userTwitter: '@serra_allgood', // Twitter Username
   ogSiteName: '', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
   googleAnalyticsID: 'UA-136587104-1',
