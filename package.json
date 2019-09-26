@@ -1,0 +1,46 @@
+{
+  "name": "allgood.dev",
+  "version": "0.0.0",
+  "description": "Personal site of Serra Allgood",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy:prod": "npm run build && now --prod",
+    "test": "node_modules/.bin/standard **/*.tsx --fix --verbose | node_modules/.bin/snazzy"
+  },
+  "standard": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serra-allgood/allgood.git"
+  },
+  "keywords": [],
+  "author": "Serra Allgood <serra@allgood.dev>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/serra-allgood/allgood/issues"
+  },
+  "homepage": "https://github.com/serra-allgood/allgood#readme",
+  "dependencies": {
+    "next": "9.0.6",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-markdown": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.1",
+    "typescript": "^3.6.3"
+  }
+}
