@@ -1,4 +1,5 @@
 export * from './Banner'
+export * from './BannerLanding'
 export * from './Collaboration'
 export * from './ContactInfo'
 export * from './Experience'

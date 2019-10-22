@@ -1,16 +1,15 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 
 import {
   Banner,
-  // Collaboration,
+  Collaboration,
   // ContactInfo,
-  // Experience,
-  // Incompatibility,
-  // Interests,
-  Layout
-  // Navigation,
-  // Perspectives,
-  // Values
+  Experience,
+  Incompatibility,
+  Interests,
+  Layout,
+  Perspectives,
+  Values
 } from '../components'
 
 const Index = () => (
@@ -20,47 +19,43 @@ const Index = () => (
 
       <div id='main'>
         <section id='one' className='tiles'>
-          <article style={{ backgroundImage: 'url(\'/static/images/pic01.jpg\')' }}>
+          <article>
             <header className='major'>
-              <h3>Aliquam</h3>
-              <p>Ipsum dolor sit amet</p>
+              <h3>Personal Values</h3>
+              <Values />
             </header>
-            {/* <Link href='/landing'><a className='link primary' /></Link> */}
+            <Link href='/values'><a className='link primary' /></Link>
           </article>
           <article style={{ backgroundImage: 'url(\'/static/images/pic02.jpg\')' }}>
             <header className='major'>
-              <h3>Tempus</h3>
-              <p>feugiat amet tempus</p>
+              <h3>Defining Perspectives</h3>
+              <Perspectives />
             </header>
-            {/* <Link href='/landing'><a className='link primary' /></Link> */}
+            <Link href='/perspectives'><a className='link primary' /></Link>
           </article>
           <article style={{ backgroundImage: 'url(\'/static/images/pic03.jpg\')' }}>
             <header className='major'>
-              <h3>Magna</h3>
-              <p>Lorem etiam nullam</p>
+              <h3>As a Collaborator</h3>
+              <Collaboration />
             </header>
-            {/* <Link href='/landing'><a className='link primary' /></Link> */}
           </article>
           <article style={{ backgroundImage: 'url(\'/static/images/pic04.jpg\')' }}>
             <header className='major'>
-              <h3>Ipsum</h3>
-              <p>Nisl sed aliquam</p>
+              <h3>Personal Challenges</h3>
+              <Incompatibility />
             </header>
-            {/* <Link href='/landing'><a className='link primary' /></Link> */}
           </article>
           <article style={{ backgroundImage: 'url(\'/static/images/pic05.jpg\')' }}>
             <header className='major'>
-              <h3>Consequat</h3>
-              <p>Ipsum dolor sit amet</p>
+              <h3>Past Technical Experience</h3>
+              <Experience />
             </header>
-            {/* <Link href='/landing'><a className='link primary' /></Link> */}
           </article>
           <article style={{ backgroundImage: 'url(\'/static/images/pic06.jpg\')' }}>
             <header className='major'>
-              <h3>Etiam</h3>
-              <p>Feugiat amet tempus</p>
+              <h3>Current Interests</h3>
+              <Interests />
             </header>
-            {/* <Link href='/landing'><a className='link primary' /></Link> */}
           </article>
         </section>
         <section id='two'>
@@ -69,9 +64,6 @@ const Index = () => (
               <h2>Massa libero</h2>
             </header>
             <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-            {/* <ul className='actions'>
-              <li><Link href='/landing'><a className='button next'>Get Started</a></Link></li>
-            </ul> */}
           </div>
         </section>
       </div>

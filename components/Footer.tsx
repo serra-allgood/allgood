@@ -9,8 +9,9 @@ const Footer = (props) => (
         <li><a href='#' className='icon alt fa-linkedin'><span className='label'>LinkedIn</span></a></li>
       </ul>
       <ul className='copyright'>
-        <li>&copy; Serra Allgood</li>
-        <li>Based on Design by <a href='https://html5up.net'>HTML5 UP</a></li>
+        <li>&copy;2019 Serra C Allgood</li>
+        <li>Based on a Next.js Design by <a href='https://html5up.net'>HTML5 UP</a></li>
+        <li>Powered with Now by <a href='https://zeit.co'>Zeit.co</a></li>
       </ul>
     </div>
   </footer>
