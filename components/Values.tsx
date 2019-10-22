@@ -1,4 +1,4 @@
-import { Details } from '../components'
+import { Details } from '.'
 
 export const Values = () => (
   <section id='values'>
