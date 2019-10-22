@@ -7,7 +7,7 @@ import {
   Navigation,
   Perspectives,
   Values
-} from '../components'
+} from '../sections'
 
 const Index = () => (
   <>
