@@ -6,7 +6,7 @@ const Header = ({ onToggleMenu }) => (
       <a className='logo'>It's <strong>Allgood</strong>, Serra</a>
     </Link>
     <nav>
-      <a className='menu-link' onClick={onToggleMenu} href='javascript:;'>Menu</a>
+      <a className='menu-link' onClick={onToggleMenu}>Menu</a>
     </nav>
   </header>
 )

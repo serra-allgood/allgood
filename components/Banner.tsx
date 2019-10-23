@@ -4,16 +4,12 @@ export const Banner = () => (
       <header className='major'>
         <h1>Serra C Allgood</h1>
         <h2>
-          <a target='_blank' rel='noopener noreferrer' href='https://allgood.link/pronoun_preferences'>
-            xi/xer or she/her
-          </a>
+          Self-taught software engineer &amp; non-binary iconoclast
         </h2>
       </header>
-      <div className='content'>
-        <p>
-          Self-taught software engineer &amp; non-binary iconoclast
-        </p>
-      </div>
+      <p>
+        any historical pronoun sets accepted, <a target='_blank' rel='noopener noreferrer' href='https://allgood.link/pronoun_preferences'>xi/xer preferred</a>
+      </p>
     </div>
   </section>
 )

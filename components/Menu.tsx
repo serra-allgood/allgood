@@ -13,7 +13,7 @@ const Menu = ({ onToggleMenu }) => (
         <li><Link href='/interests'><a><span>Current Interests</span></a></Link></li>
       </ul>
     </div>
-    <a className='close' onClick={onToggleMenu} href='javascript:;'>Close</a>
+    <a className='close' onClick={onToggleMenu}>Close</a>
   </nav>
 )
 

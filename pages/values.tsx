@@ -13,17 +13,19 @@ const Values = () => (
 
     <div>
       <div id='main'>
-        <section id='one'>
-          <div className='inner'>
-            <header className='major'>
-              <h2>Authenticity</h2>
-            </header>
-            <p>
-              After more than 25 years denying my gender identity and sexuality, I refuse to be anything other than my <strong>authentic</strong> self in body and soul. I do not live for the sake of being loud, however, I accept that for anyone to be true to themselves, a little volume is going to be inevitable. Whether it's a new pair of fashionable glasses, long skirts, or visible tattoos and facial piercings, you'll find me easy to pick out of a crowd.
-            </p>
-          </div>
-        </section>
-        <section id='two' className='spotlights'>
+        <section id='one' className='spotlights'>
+          <section>
+            <div className='content'>
+              <div className='inner'>
+                <header className='major'>
+                  <h2>Authenticity</h2>
+                </header>
+                <p>
+                  After more than 25 years denying my gender identity and sexuality, I refuse to be anything other than my <strong>authentic</strong> self in body and soul. I do not live for the sake of being loud, however, I accept that for anyone to be true to themselves, a little volume is going to be inevitable. Whether it's a new pair of fashionable glasses, long skirts, or visible tattoos and facial piercings, you'll find me easy to pick out of a crowd.
+                </p>
+              </div>
+            </div>
+          </section>
           <section>
             <div className='content'>
               <div className='inner'>

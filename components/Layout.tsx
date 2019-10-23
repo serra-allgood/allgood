@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 import Menu from './Menu'
-import stylesheet from 'styles/main.scss'
+import stylesheet from '../styles/main.scss'
 
 export const Layout = ({ children }) => {
   const [isMenuVisible, setMenuVisible] = useState(false)
@@ -17,7 +17,7 @@ export const Layout = ({ children }) => {
     <main className={`body ${isMenuVisible ? 'is-menu-visible' : ''}`}>
       <Head>
         <title>It's Allgood, Serra</title>
-        <meta name='description' content='Personal professional site for Serra Corwin Allgood' />
+        <meta name='description' content='Personal professional site for Serra C Allgood' />
         <link href='/static/css/skel.css' rel='stylesheet' />
       </Head>
 
