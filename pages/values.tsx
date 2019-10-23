@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import { BannerLanding, Layout, Values as V } from '../components'
+import { BannerLanding, Layout } from '../components'
+import { Values as Summary } from '../components/tiles'
 
 const Values = () => (
   <Layout>
@@ -9,7 +10,7 @@ const Values = () => (
       <meta name='description' content='The personal values of Serra C Allgood' />
     </Head>
 
-    <BannerLanding header='Personal Values' summary={V} />
+    <BannerLanding header='Personal Values' summary={Summary} />
 
     <div>
       <div id='main'>

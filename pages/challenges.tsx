@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import { BannerLanding, Challenges as Summary, Layout } from '../components'
+import { BannerLanding, Layout } from '../components'
+import { Challenges as Summary } from '../components/tiles'
 
 const Challenges = () => (
   <Layout>
@@ -45,6 +46,19 @@ const Challenges = () => (
             </p>
             <p>
               I am well aware what the common perception of psychotics is, and that is precisely why I disclose it on this personal site. I do not want to be in any situation where people feel threatened by my simple existence.
+            </p>
+          </div>
+        </section>
+        <section id='three'>
+          <div className='inner'>
+            <header className='major'>
+              <h2>Undifferentiated Sleep Difficulties</h2>
+            </header>
+            <p>
+              I have significant difficult getting and staying asleep, and due to my clinical history, psychiatrists are uncomfortable prescibing powerful sleep aides such as Ambian. Frankly, from a strictly external perspective, their concern is valid, although overdose is one of the least affective methods of suicide and was removed from my personal list of exit strategies when I was a teenager.
+            </p>
+            <p>
+              To cope with my sleep problems, I consistently gently force myself to wake up around 05:30 regardless of the day of the week. It does mean that some days I become more and less useless towards the end of the traditional workday, so I also try to start my workday as soon as possible. A work environment in which keeping these odd hours can be successful for everyone involved is of high importance to me.
             </p>
           </div>
         </section>

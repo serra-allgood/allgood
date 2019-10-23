@@ -1,16 +1,14 @@
 import Link from 'next/link'
 
+import { Banner, Layout } from '../components'
 import {
-  Banner,
   Collaboration,
-  // ContactInfo,
   Experience,
   Challenges,
   Interests,
-  Layout,
   Perspectives,
   Values
-} from '../components'
+} from '../components/tiles'
 
 const Index = () => (
   <Layout>

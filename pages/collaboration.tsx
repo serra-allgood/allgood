@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import { BannerLanding, Collaboration as Summary, Layout } from '../components'
+import { BannerLanding, Layout } from '../components'
+import { Collaboration as Summary } from '../components/tiles'
 
 const Collaboration = () => (
   <Layout>

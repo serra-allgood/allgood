@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import { BannerLanding, Layout, Perspectives as Summary } from '../components'
+import { BannerLanding, Layout } from '../components'
+import { Perspectives as Summary } from '../components/tiles'
 
 const Perspectives = () => (
   <Layout>

@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { BannerLanding, Interests as Summary, Layout } from '../components'
+import { BannerLanding, Layout } from '../components'
+import { Interests as Summary } from '../components/tiles'
 
 const Interests = () => (
   <Layout>

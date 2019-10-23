@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
-import { BannerLanding, Experience as Summary, Layout } from '../components'
+import { BannerLanding, Layout } from '../components'
+import { Experience as Summary } from '../components/tiles'
 
 const Experience = () => (
   <Layout>
