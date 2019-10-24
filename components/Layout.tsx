@@ -33,7 +33,7 @@ export const Layout = ({ children }) => {
         <title>It's Allgood, Serra</title>
         <meta name='description' content='Personal professional site for Serra C Allgood' />
         <link href='/static/css/skel.css' rel='stylesheet' />
-        <script src='/static/font-awesome/js/all.min.js' async />
+        <script src='/static/font-awesome/js/all.min.js' defer />
       </Head>
 
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />

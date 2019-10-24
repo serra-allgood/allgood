@@ -1,5 +1,5 @@
 export * from './Banner'
 export * from './BannerLanding'
-export * from './ContactInfo'
 export * from './Header'
 export * from './Layout'
+export * from './Tile'

@@ -3,15 +3,16 @@ import Link from 'next/link'
 
 import { BannerLanding, Layout } from '../components'
 import { Interests as Summary } from '../components/tiles'
+import { INTERESTS } from '../components/Constants'
 
 const Interests = () => (
   <Layout>
     <Head>
-      <title>Interests &amp; Hobbies</title>
-      <meta name='description' content='Interests &amp; Hobbies of Serra C Allgood' />
+      <title>{INTERESTS}</title>
+      <meta name='description' content={`${INTERESTS} of Serra C Allgood`} />
     </Head>
 
-    <BannerLanding header='Interests &amp; Hobbies' summary={Summary} />
+    <BannerLanding header={INTERESTS} summary={Summary} />
 
     <div>
       <div id='main'>

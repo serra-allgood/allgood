@@ -2,15 +2,16 @@ import Head from 'next/head'
 
 import { BannerLanding, Layout } from '../components'
 import { Experience as Summary } from '../components/tiles'
+import { EXPERIENCE } from '../components/Constants'
 
 const Experience = () => (
   <Layout>
     <Head>
-      <title>Past Technical Experience</title>
-      <meta name='description' content='Past Technical Experience of Serra C Allgood' />
+      <title>{EXPERIENCE}</title>
+      <meta name='description' content={`${EXPERIENCE} of Serra C Allgood`} />
     </Head>
 
-    <BannerLanding header='Past Technical Experience' summary={Summary} />
+    <BannerLanding header={EXPERIENCE} summary={Summary} />
 
     <div>
       <div id='main'>

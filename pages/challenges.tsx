@@ -2,12 +2,13 @@ import Head from 'next/head'
 
 import { BannerLanding, Layout } from '../components'
 import { Challenges as Summary } from '../components/tiles'
+import { CHALLENGES } from '../components/Constants'
 
 const Challenges = () => (
   <Layout>
     <Head>
-      <title>Personal Challenges</title>
-      <meta name='description' content='Personal challenges experienced by Serra C Allgood' />
+      <title>{CHALLENGES}</title>
+      <meta name='description' content={`${CHALLENGES} Experienced by Serra C Allgood`} />
     </Head>
 
     <BannerLanding header='Significant Mental Health Indications' summary={Summary} />

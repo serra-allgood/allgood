@@ -2,15 +2,16 @@ import Head from 'next/head'
 
 import { BannerLanding, Layout } from '../components'
 import { Collaboration as Summary } from '../components/tiles'
+import { COLLABORATION } from '../components/Constants'
 
 const Collaboration = () => (
   <Layout>
     <Head>
-      <title>Collaborating with Serra</title>
-      <meta name='description' content='Serra C Allgood as a collaborator' />
+      <title>{COLLABORATION}</title>
+      <meta name='description' content='Collaborating with Serra C Allgood' />
     </Head>
 
-    <BannerLanding header='As a Collaborator' summary={Summary} />
+    <BannerLanding header={COLLABORATION} summary={Summary} />
 
     <div>
       <div id='main'>

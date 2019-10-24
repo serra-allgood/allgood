@@ -1,0 +1,6 @@
+export const CHALLENGES = 'Personal Challenges'
+export const COLLABORATION = 'As a Collaborator'
+export const EXPERIENCE = 'Past Technical Experience'
+export const INTERESTS = 'Interests & Hobbies'
+export const PERSPECTIVES = 'Defining Perspectives'
+export const VALUES = 'Personal Values'
