@@ -7,11 +7,11 @@ import { Interests as Summary } from '../components/tiles'
 const Interests = () => (
   <Layout>
     <Head>
-      <title>Current Interests &amp; Hobbies</title>
-      <meta name='description' content='Interests and Hobbies of Serra C Allgood' />
+      <title>Interests &amp; Hobbies</title>
+      <meta name='description' content='Interests &amp; Hobbies of Serra C Allgood' />
     </Head>
 
-    <BannerLanding header='Current Interests &amp; Hobbies' summary={Summary} />
+    <BannerLanding header='Interests &amp; Hobbies' summary={Summary} />
 
     <div>
       <div id='main'>

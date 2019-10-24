@@ -1,9 +1,37 @@
-const Footer = (props) => (
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+require('./Icons')
+// require('@fortawesome/free-brands-svg-icons')
+
+const Footer = ({ isLoading }) => (
   <footer id='footer'>
     <div className='inner'>
-      <ul className='icons'>
-        <li><a href='https://twitter.com/serra_allgood' className='icon alt fa-twitter'><span className='label'>Twitter</span></a></li>
-        <li><a href='https://github.com/serra-allgood' className='icon alt fa-github'><span className='label'>GitHub</span></a></li>
+      <ul className={`icons ${isLoading ? 'hidden' : ''}`}>
+        <li>
+          <a href='https://github.com/serra-allgood' className='icon alt'>
+            <FontAwesomeIcon icon={['fab', 'github']} />
+            <span className='label'>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href='https://keybase.io/serra_allgood' className='icon alt'>
+            <FontAwesomeIcon icon={['fab', 'keybase']} />
+            <span className='label'>Keybase</span>
+          </a>
+        </li>
+        <li>
+          <a href='https://qoto.org/@jump_spider' className='icon alt'>
+            <FontAwesomeIcon icon={['fab', 'mastodon']} />
+            <span className='label'>Mastodon</span>
+          </a>
+        </li>
+        <li>
+          <a href='https://twitter.com/serra_allgood' className='icon alt'>
+            <FontAwesomeIcon icon={['fab', 'twitter']} />
+            <span className='label'>Twitter</span>
+          </a>
+        </li>
+
         <li><a href='https://www.linkedin.com/in/serra-allgood' className='icon alt fa-linkedin'><span className='label'>LinkedIn</span></a></li>
       </ul>
       <ul className='copyright'>

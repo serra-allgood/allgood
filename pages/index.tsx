@@ -47,7 +47,7 @@ const Index = () => (
           </article>
           <article>
             <header className='major'>
-              <h3>Current Interests &amp; Hobbies</h3>
+              <h3>Interests &amp; Hobbies</h3>
               <Interests />
             </header>
             <Link href='/interests'><a className='link primary' /></Link>

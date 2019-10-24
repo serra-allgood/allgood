@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import Head from 'next/head'
 
 import Header from './Header'
@@ -8,17 +8,32 @@ import stylesheet from '../styles/main.scss'
 
 export const Layout = ({ children }) => {
   const [isMenuVisible, setMenuVisible] = useState(false)
+  const [isLoading, setIsLoading] = useState('is-loading')
+  const [timeoutID, setTimeoutID] = useState(null)
+
+  useLayoutEffect(() => {
+    setTimeoutID(
+      setTimeout(() => {
+        setIsLoading('')
+      }, 100)
+    )
+
+    return () => {
+      clearTimeout(timeoutID)
+    }
+  }, [])
 
   const handleToggleMenu = () => {
     setMenuVisible(!isMenuVisible)
   }
 
   return (
-    <main className={`body ${isMenuVisible ? 'is-menu-visible' : ''}`}>
+    <main className={`body ${isLoading} ${isMenuVisible ? 'is-menu-visible' : ''}`}>
       <Head>
         <title>It's Allgood, Serra</title>
         <meta name='description' content='Personal professional site for Serra C Allgood' />
         <link href='/static/css/skel.css' rel='stylesheet' />
+        <script src='/static/font-awesome/js/all.min.js' async />
       </Head>
 
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
@@ -26,7 +41,7 @@ export const Layout = ({ children }) => {
       <div id='wrapper'>
         <Header onToggleMenu={handleToggleMenu} />
         {children}
-        <Footer />
+        <Footer isLoading={isLoading} />
       </div>
 
       <Menu onToggleMenu={handleToggleMenu} />
