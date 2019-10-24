@@ -63,6 +63,20 @@
 				top: 0;
 				width: 100%;
 				z-index: 4;
+
+				/* Custom */
+				.mobile {
+					display: none;
+
+					@include breakpoint('small') {
+						@include padding(0, 1.5em);
+						display: inline;
+						position: absolute;
+						bottom: 0;
+						text-decoration: underline;
+					}
+				}
+				/* --- */
 			}
 
 			&:before {
@@ -162,7 +176,7 @@
 		@include breakpoint(small) {
 			article {
 				@include padding(3em, 1.5em);
-				height: 16em;
+				height: auto !important; // custom
 				max-height: none;
 				min-height: 0;
 

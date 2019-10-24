@@ -6,6 +6,6 @@ export const Tile = ({ header, summary, href }) => (
       <h3>{header}</h3>
       {summary()}
     </header>
-    <Link href={href}><a className='link primary' /></Link>
+    <Link href={href}><a className='link primary'><span className='mobile'>Read more...</span></a></Link>
   </article>
 )
