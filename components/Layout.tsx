@@ -1,6 +1,7 @@
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Head from 'next/head'
 
+import useIntersect from '../hooks/useIntersect'
 import Header from './Header'
 import Footer from './Footer'
 import Menu from './Menu'
@@ -11,7 +12,7 @@ export const Layout = ({ children }) => {
   const [isLoading, setIsLoading] = useState('is-loading')
   const [timeoutID, setTimeoutID] = useState(null)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setTimeoutID(
       setTimeout(() => {
         setIsLoading('')
@@ -23,6 +24,8 @@ export const Layout = ({ children }) => {
     }
   }, [])
 
+  const [ref, entry] = useIntersect()
+
   const handleToggleMenu = () => {
     setMenuVisible(!isMenuVisible)
   }
@@ -33,13 +36,15 @@ export const Layout = ({ children }) => {
         <title>It's Allgood, Serra</title>
         <meta name='description' content='Personal professional site for Serra C Allgood' />
         <link href='/static/css/skel.css' rel='stylesheet' />
-        <script src='/static/font-awesome/js/all.min.js' defer />
+        <script src='/static/font-awesome/js/all.min.js' />
       </Head>
 
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
 
+      <div ref={ref} />
+
       <div id='wrapper'>
-        <Header onToggleMenu={handleToggleMenu} />
+        <Header onToggleMenu={handleToggleMenu} ratio={entry.intersectionRatio} />
         {children}
         <Footer isLoading={isLoading} />
       </div>
