@@ -20,7 +20,7 @@ const Footer = ({ isLoading }) => (
           </a>
         </li>
         <li>
-          <a href='https://qoto.org/@jump_spider' className='icon alt'>
+          <a rel='me' href='https://qoto.org/@jump_spider' className='icon alt'>
             <FontAwesomeIcon icon={['fab', 'mastodon']} />
             <span className='label'>Mastodon</span>
           </a>
