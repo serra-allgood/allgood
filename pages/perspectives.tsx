@@ -44,7 +44,7 @@ const Perspectives = () => (
             <div className='content'>
               <div className='inner'>
                 <header className='major'>
-                  <h3>Clearing a path for the least advantaged creates a path for everyone</h3>
+                  <h3>Clearing a path for the least advantaged creates a way for everyone</h3>
                 </header>
                 <p>
                   The development of the Internet was a promise of a globally connected world, in which every human can participate without the constraints of geography or physical ability. As an industry, we have unequivocally failed to deliver this promise. Only the likes of <abbr title='Google, Amazon, Facebook, Apple, Microsoft'>GAFAM</abbr> seriously approach accessibility well, yet even then settings and features that benefit even the abled are hidden deep in buried menus. Accessible and ethical software design in form and function absolutely cannot be regarded as "nice to have," because a ramp enables everyone to climb.

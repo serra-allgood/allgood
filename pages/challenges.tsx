@@ -18,7 +18,7 @@ const Challenges = () => (
         <section id='one'>
           <div className='inner'>
             <header className='major'>
-              <h2>Major Depression with Obsessive Compulsive Tendencies</h2>
+              <h2>Major Depression<br />with Obsessive Compulsive Tendencies</h2>
             </header>
             <p>
               Since childhood, I have experienced major depression and was diagnosed as such after I attempted suicide at the age of 16. At my current age, my depression most commonly manifests as feeling so overwhelmed that I have great difficulty doing anything other than sleep. Very recent life events have significantly curtailed this behavior, however.
