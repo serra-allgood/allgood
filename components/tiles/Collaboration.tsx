@@ -1,7 +1,7 @@
 export const Collaboration = () => (
   <section id='collaboration'>
     <summary>
-      A successful working relationship is characterized by genuine empathetic encouragement and dispassionate attachment from specific code under discussion. Any vulnerability, be it crying in front of a loved one or asking for help to optimize an algorithm, requires trust in the people in your own environment.
+      Genuine, empathetic encouragement, and dispassionate unattachment to specific code under discussion characterize a successful working relationship. Any vulnerability, be it crying in front of a loved one or asking for help to optimize an algorithm, requires trust in the people in your environment.
     </summary>
   </section>
 )
