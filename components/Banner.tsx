@@ -8,7 +8,7 @@ export const Banner = () => (
         </h2>
       </header>
       <p>
-        any historical pronoun set accepted, <a target='_blank' rel='noopener noreferrer' href='https://allgood.link/pronoun_preferences'>xi/xer preferred</a>
+        any historical pronoun set accepted, <a target='_blank' rel='noopener noreferrer' href='https://allgood.link/pronoun_preferences'>xi/xer/xem preferred</a>
       </p>
     </div>
   </section>
