@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
+import useIntersect from 'react-useintersection'
 
-import useIntersect from '../hooks/useIntersect'
 import Header from './Header'
 import Footer from './Footer'
 import Menu from './Menu'
