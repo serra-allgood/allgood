@@ -39,8 +39,8 @@ export const Layout = ({ children }) => {
         <link rel='apple-touch-icon' sizes='180x180' href='/static/apple-touch-icon.png' />
         <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon-16x16.png' />
+        <link rel='stylesheet' href='/static/fork-awesome/css/fork-awesome.min.css' />
         <link rel='manifest' href='/static/site.webmanifest' />
-        <script src='/static/font-awesome/js/all.min.js' />
       </Head>
 
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
