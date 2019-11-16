@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
-import useIntersect from 'react-useintersection'
+import useIntersection from 'react-useintersection'
 
 import Header from './Header'
 import Footer from './Footer'
 import Menu from './Menu'
 import stylesheet from '../styles/main.scss'
+
+require('@ungap/global-this')
 
 export const Layout = ({ children }) => {
   const [isMenuVisible, setMenuVisible] = useState(false)
@@ -24,7 +26,7 @@ export const Layout = ({ children }) => {
     }
   }, [])
 
-  const [ref, entry] = useIntersect()
+  const [ref, entry] = useIntersection()
 
   const handleToggleMenu = () => {
     setMenuVisible(!isMenuVisible)

@@ -28,10 +28,11 @@
   },
   "homepage": "https://github.com/serra-allgood/allgood#readme",
   "dependencies": {
+    "@ungap/global-this": "^0.3.1",
     "next": "9.0.6",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-useintersection": "^1.0.3",
+    "react-useintersection": "^2.0.0",
     "typeface-source-sans-pro": "0.0.75"
   },
   "devDependencies": {
