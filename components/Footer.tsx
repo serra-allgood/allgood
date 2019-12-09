@@ -21,7 +21,7 @@ const Footer = ({ isLoading }) => (
           </a>
         </li>
         <li>
-          <a href='https://write.allgood.mx' className='icon alt'>
+          <a href='https://with.spider.ink' className='icon alt'>
             <img src='/static/writefreely.svg' width='20px' />
             <span className='label'>Blog</span>
           </a>
