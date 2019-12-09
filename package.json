@@ -29,19 +29,19 @@
   "homepage": "https://github.com/serra-allgood/allgood#readme",
   "dependencies": {
     "@ungap/global-this": "^0.3.1",
-    "next": "9.0.6",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
+    "next": "^9.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-useintersection": "^2.0.0",
-    "typeface-source-sans-pro": "0.0.75"
+    "typeface-source-sans-pro": "^0.0.75"
   },
   "devDependencies": {
-    "@types/node": "^12.12.7",
-    "@types/react": "^16.9.11",
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.15",
     "@types/react-dom": "^16.9.4",
-    "@typescript-eslint/eslint-plugin": "^2.7.0",
-    "@typescript-eslint/parser": "^2.7.0",
-    "autoprefixer": "^9.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "autoprefixer": "^9.7.3",
     "glob": "^7.1.6",
     "node-sass": "^4.13.0",
     "postcss-easy-import": "^3.0.0",
@@ -49,6 +49,6 @@
     "raw-loader": "^3.1.0",
     "sass-loader": "^7.3.1",
     "standard": "^14.3.1",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.3"
   }
 }
