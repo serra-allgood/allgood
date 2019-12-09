@@ -1,11 +1,13 @@
 import Link from 'next/link'
 
 export const Tile = ({ header, summary, href }) => (
-  <article>
+  <article className='tile'>
+    <Link href={href}><a className='link primary' /></Link>
     <header className='major'>
       <h3>{header}</h3>
       {summary()}
+      <br />
+      <span className='mobile'>Read more...</span>
     </header>
-    <Link href={href}><a className='link primary'><span className='mobile'>Read more...</span></a></Link>
   </article>
 )

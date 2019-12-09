@@ -16,6 +16,18 @@
 		}
 
 		article {
+			/* Custom */
+			.mobile {
+				display: none;
+
+				@include breakpoint('small') {
+					display: inline;
+					text-decoration: underline wavy currentcolor 0.075em;
+					text-underline-offset: -1.5em;
+				}
+			}
+			/* --- */
+
 			@include vendor('align-items', 'center');
 			@include vendor('display', 'flex');
 			@include vendor('transition', (
@@ -63,20 +75,6 @@
 				top: 0;
 				width: 100%;
 				z-index: 4;
-
-				/* Custom */
-				.mobile {
-					display: none;
-
-					@include breakpoint('small') {
-						@include padding(0, 1.5em);
-						display: inline;
-						position: absolute;
-						bottom: 0;
-						text-decoration: underline;
-					}
-				}
-				/* --- */
 			}
 
 			&:before {
