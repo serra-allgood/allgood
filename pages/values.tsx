@@ -47,7 +47,7 @@ const Values = () => (
                   <h3>Intentional Curiosity</h3>
                 </header>
                 <p>
-                  Software and computer science are fields bounded in recent history yet change so fast that to call the profession a type of engineering is a misnomer. Whether it's the history of the development of little and big-endian systems, experimental languages intended to supplant the C family, or even conventional cryptographic algorithms that hypothetically will confound the future of quantum computing, there will not be something exciting, exotic, and intriguing to learn, and that's only within this discipline. Not just curiosity but <strong>intentional curiosity</strong> is an absolute necessity to grow professionally and as a person in this modern world.
+                  Software and computer science are fields bounded in recent history yet change so fast that to call the profession a type of engineering is a misnomer. Whether it's the history of the development of little and big endian systems, experimental languages intended to supplant the C family, or even conventional cryptographic algorithms that hypothetically will confound the future of quantum computing, there will never not be something exciting, exotic, and intriguing to learn, and that's only within this discipline. Not just curiosity but <strong>intentional curiosity</strong> is an absolute necessity to grow professionally and as a person in this modern world.
                 </p>
               </div>
             </div>

@@ -35,7 +35,7 @@ const Collaboration = () => (
                   <h3>This is not my work space nor is it yours; it is ours</h3>
                 </header>
                 <p>
-                  I adapt to my environment; however, I do not conform to my environment. I bring my sense of humor when submitting PRs, but I hold it back when commenting on someone else's. If I have a concern with how an interaction occurred, I'll follow-up with the people involved directly, and I expect the same in return. We spend the majority of our lives in our workspaces, so we cannot simply check our baggage at the door; if I am frustrated with how someone engages, my first question is how I can alter my expectations of them and not how they can change to accommodate me.
+                  I adapt to my environment. I bring my sense of humor when submitting PRs, but I hold it back when commenting on someone else's. If I have a concern with how an interaction occurred, I'll follow-up with the people involved directly, and I expect the same in return. We spend the majority of our lives in our workspaces, so we cannot simply check our baggage at the door; if I am frustrated with how someone engages, my first question is how I can alter my expectations of them and not how they can change to accommodate me.
                 </p>
               </div>
             </div>
@@ -47,7 +47,7 @@ const Collaboration = () => (
                   <h3>Let the hero die so the leader can live</h3>
                 </header>
                 <p>
-                  I historically have a nasty habit of over committing and taking on every opportunity to help at my own expense; making sure I haven't set more than two Slack channels to notify always is part of my mental health checklist. Instead of trying to prove myself by jumping to help without consideration for my current obligations, I will seek to encourage "volunteer delegation" by prompting any <em>someone</em> to take direct ownership or to take ownership of prioritizing delegation.
+                  I historically have a nasty habit of over committing and taking on every opportunity to help at my own expense; making sure I haven't set more than two Slack channels to always notify is part of my mental health checklist. Instead of trying to prove myself by jumping to help without consideration for my current obligations, I will seek to encourage "volunteer delegation" by prompting any <em>someone</em> to take direct ownership or to take ownership of prioritizing delegation.
                 </p>
               </div>
             </div>
