@@ -15,7 +15,7 @@ const Footer = ({ isLoading }) => (
           </a>
         </li>
         <li>
-          <a href='https://keybase.io/serra_allgood' className='icon alt'>
+          <a href='https://keybase.io/jump_spider' className='icon alt'>
             <i className='fa fa-keybase' />
             <span className='label'>Keybase</span>
           </a>
@@ -27,7 +27,7 @@ const Footer = ({ isLoading }) => (
           </a>
         </li>
         <li>
-          <a rel='me' href='https://lost-angles.im/@jump_spider' className='icon alt'>
+          <a rel='me' href='https://tech.lgbt/@jump_spider' className='icon alt'>
             <i className='fa fa-mastodon' />
             <span className='label'>Mastodon</span>
           </a>
