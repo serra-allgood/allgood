@@ -29,7 +29,7 @@
   "homepage": "https://github.com/serra-allgood/allgood#readme",
   "dependencies": {
     "@ungap/global-this": "^0.3.1",
-    "next": "^10.2.2",
+    "next": "^11.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-useintersection": "^2.0.0",
